@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Aula 02</title>
+    <script>
+      console.log("Olá mundo!");
+      console.warn("Olá Warning!");
+      console.error("Olá Erro!");
+
+      //Demonstrando tipagem fraca
+      var fruta;
+      console.log(fruta);
+      console.log(typeof fruta);
+
+      fruta = "Abacaxi";
+      console.log(fruta);
+      console.log(typeof fruta);
+
+      //Demosntrando o conceito de Tipagem Dinâminca
+      var preco;
+      console.log(typeof preco);
+
+      preco = 149.5;
+      console.log(preco);
+      console.log(typeof preco);
+
+      preco = true;
+      console.log(preco);
+      console.log(typeof preco);
+
+      preco = "Está muito caro!";
+      console.log(preco);
+      console.log(typeof preco);
+
+      var preco = 247.32;
+      console.log("Novo valor de preço: " + preco);
+
+      let piloto = "Sainz";
+      console.log("Piloto: ", piloto);
+      piloto = "Verstappen";
+      console.log("Piloto: ", piloto);
+      //let piloto = "Hamilton";
+
+      const USUARIO = "Thiago";
+      console.log("Usuário: ", USUARIO);
+      console.log("Tipo: ", typeof USUARIO);
+      //const USUARIO = "Ana";
+      //USUARIO = "Ana";
+
+      /* QUIZ */
+      if (true) {
+        var varVariable = "I am VAR";
+        let letVariable = "I am LET";
+        const constVariable = "I am CONST";
+      }
+      console.log(varVariable); // I am VAR
+      //console.log(letVariable); //erro (fora do escopo)
+      //console.log(constVariable); //erro (fora do escopo)
+      let letVariable = "Redeclarei a LET";
+      console.log(letVariable);
+
+      function testScope() {
+        var insideFunction = "Exists inside function";
+        return insideFunction;
+      }
+      testScope();
+      console.log(testScope()); //Exists inside function
+
+      if (true) {
+        let carro = "Porsche";
+        console.log("Carro: ", carro);
+        if (true) {
+          console.log("Carro outro bloco: ", carro);
+        }
+        var xpto = "Xpto";
+      }
+      //console.log(carro); //Erro
+
+      let mediaKmL = 5.5;
+      let carro = "Porsche";
+      if (carro == "Porsche" || mediaKmL <= 5) {
+        console.log("Deu ruim!");
+      } else {
+        console.log("Econômico!");
+      }
+
+      let cincoNumerico = 5;
+      let cincoString = "5";
+
+      if (cincoNumerico == cincoString) {
+        console.log("Cinco é igual a cinco: 5 == '5'");
+      }
+      if (cincoNumerico === cincoString) {
+        console.log("Cinco é estritamente igual a cinco: 5 === '5'");
+      } else {
+        console.log("Cinco não é estritamente igual a cinco: 5 === '5'");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Aula #02</h1>
+  </body>
+</html>
