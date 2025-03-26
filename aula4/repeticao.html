@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Repetição</title>
+    <script>
+        // Estrutura de repetição FOR
+        for (let i = 0; i < 10; i++) {
+            console.log("Valor de i:", i);
+        }
+
+        let j = 0;
+        for (; j <= 5; j++) {
+            console.log("Valor de j:", j);
+        }
+
+        let k = 1;
+        for (; ;) {
+            console.log("Valor de k:", k);
+            k++;
+            if (k > 7) {
+                break;
+            }
+        }
+
+        // Estrutura WHILE corrigida
+        let l = 1;
+        while (l <= 10) {
+            console.log("Valor de L:", l);
+            l++; // Adicionado incremento correto
+        }
+
+        let m = 1;
+        while (m <= 15) {
+            if (m === 5) {
+                m++; // Corrigido para evitar loop infinito
+                continue;
+            }
+            console.log("Valor de m:", m);
+            m++;
+        }
+
+        // Estrutura DO WHILE
+        let n = 1;
+        do {
+            console.log("Valor de n:", n);
+            n++;
+        } while (n <= 7);
+
+        // Estruturas condicionais
+        let fruta = "Abacaxi";
+
+        // Operador ternário
+        fruta == 'Abacaxi' ? console.log("Amarelo") : console.log("Vermelho");
+
+        if (fruta == "Abacaxi") {
+            console.log("Amarelo");
+        } else {
+            console.log("Vermelho");
+        }
+
+        let sabor = fruta == "Abacaxi" ? "Azedo" : "Salgado";
+        console.log("Sabor:", sabor);
+
+        let preco = fruta == "Abacaxi" ? "5.45" : fruta == "Melância" ? "3.20" : "Valor indefinido";
+        console.log("Preço:", preco);
+
+        let cpfVindoDoFront = "123456789";
+
+        // Operador ternário para validar CPF
+        let cpf = cpfVindoDoFront ? cpfVindoDoFront : "Não informado";
+        console.log("CPF:", cpf);
+
+        // Estrutura condicional
+        if (!true) {
+            console.log("Verdadeiro");
+        }
+        console.log("XPTO");
+
+    </script>
+</head>
+
+<body>
+    <h1>Estruturas de Repetição!</h1>
+</body>
+
+</html>
